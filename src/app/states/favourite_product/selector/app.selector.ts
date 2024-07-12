@@ -1,6 +1,6 @@
 import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { AppState } from '../app.state';
-import { FavoriteProduct } from '../../models/favourite-product.model';
+import { FavoriteProduct } from '../../../models/favourite-product.model';
 
 // Get complete state of the favorites products in application
 export const selectAppState = createFeatureSelector<AppState>('favorite');
