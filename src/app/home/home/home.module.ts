@@ -6,6 +6,7 @@ import { HomeProductComponent } from './home-product/home-product.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
+import { FavouriteProductComponent } from './favourite-product/favourite-product.component';
 
 
 
@@ -13,7 +14,8 @@ import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
-    HomeProductComponent
+    HomeProductComponent,
+    FavouriteProductComponent
   ],
   imports: [
     CommonModule,
