@@ -8,19 +8,23 @@ import { favoriteReducer } from './states/favourite_product/reducer/app.reducer'
 import { HomeModule } from './home/home/home.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClient } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     AppRoutingModule,
     HomeModule,
     StoreModule.forRoot({favourite:favoriteReducer}),
     SharedModule,
     BrowserAnimationsModule,
-    HomeModule
+    HomeModule,
+   
   ],
   providers: [
     provideClientHydration()

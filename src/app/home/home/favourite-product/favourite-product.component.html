@@ -1,4 +1,4 @@
-<!-- <app-header-favorite-product *ngIf="data?.length" (clickClearEvent)="clearFavoriteList()" ></app-header-favorite-product> -->
+<app-header-favourite-product ="data?.length" (clickClearEvent)="clearFavoriteList()" ></app-header-favourite-product>
 <mat-grid-list [cols]="colsDesktop" [rowHeight]="rowHeight">
     <mat-grid-tile *ngFor="let product of data">
            <mat-card class="card" >
